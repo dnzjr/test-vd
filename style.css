@@ -1,0 +1,109 @@
+/* Use a nice Google Font, for example */
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Open+Sans:wght@400;700&display=swap');
+
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background: #ffe6e6; /* Light pink background */
+  color: #333;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Header styling */
+header {
+  margin-bottom: 20px;
+}
+header h1 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 3rem;
+  color: #d81b60; /* A valentine-ish color */
+}
+
+/* Intro section */
+.intro {
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  max-width: 700px;
+  margin: 0 auto 20px auto;
+}
+
+/* Gallery images */
+.gallery {
+  margin-bottom: 20px;
+}
+.gallery h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #c2185b;
+}
+.gallery img {
+  width: 200px;
+  height: auto;
+  border-radius: 10px;
+  margin: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+
+/* Love note section */
+.love-note {
+  margin-bottom: 30px;
+  font-size: 1.1rem;
+  max-width: 750px;
+  margin: 0 auto 30px auto;
+}
+.love-note h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #c2185b;
+}
+
+/* Surprise Button */
+#surpriseBtn {
+  font-size: 1.2rem;
+  padding: 10px 20px;
+  background-color: #f48fb1;
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+#surpriseBtn:hover {
+  background-color: #ec407a;
+}
+
+/* Footer */
+footer {
+  margin-top: 30px;
+  font-size: 1rem;
+  color: #ad1457;
+}
+
+/* Floating hearts (we'll create them dynamically with JavaScript) */
+.heart {
+  position: fixed;
+  color: #d81b60;
+  font-size: 2rem;
+  animation: floatUp 5s linear infinite;
+  pointer-events: none; /* So they don't interfere with clicks */
+}
+
+/* Keyframes for floating hearts effect */
+@keyframes floatUp {
+  0% {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-1000px) scale(0.5);
+    opacity: 0;
+  }
+}
