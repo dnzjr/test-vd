@@ -107,3 +107,26 @@ footer {
     opacity: 0;
   }
 }
+
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2.5rem;
+  }
+  
+  .intro, .love-note {
+    font-size: 1rem;
+    margin: 0 10px 20px 10px;
+  }
+  
+  .gallery img {
+    width: 80%;
+    max-width: 300px; 
+    margin: 10px auto;
+    display: block; 
+  }
+
+  #surpriseBtn {
+    font-size: 1rem;
+    padding: 8px 16px;
+  }
+}
